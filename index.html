@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huỳnh Thiên Bảo - Tứ Trụ Bát Tự</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #fff7e6, #e0f7fa, #fce4ec);
+      color: #222;
+      animation: fadeIn 1.5s ease-in;
+    }
+    header {
+      background: linear-gradient(45deg, #6a1b9a, #00bcd4, #ff7043);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      animation: slideDown 1.2s ease-out;
+    }
+    header h1 {
+      font-size: 3.2rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #f0f0f0;
+    }
+    section {
+      padding: 3rem 5vw;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .card {
+      background: linear-gradient(145deg, #ffffff, #f3f3f3);
+      border-radius: 20px;
+      padding: 2rem;
+      max-width: 400px;
+      flex: 1 1 300px;
+      box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+      text-align: center;
+      transition: transform 0.4s, box-shadow 0.4s;
+      animation: fadeInUp 1s ease forwards;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 20px 30px rgba(0,0,0,0.25);
+    }
+    .card i {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #e65100;
+    }
+    .highlight {
+      background: linear-gradient(to right, #ffd54f, #ffb300);
+      padding: 1rem;
+      border-radius: 15px;
+      color: #000;
+      font-weight: bold;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      animation: glow 2s infinite alternate;
+    }
+    .multi {
+      background: linear-gradient(to right, #4fc3f7, #81d4fa);
+      color: #000;
+      padding: 1.5rem;
+      border-radius: 20px;
+      margin: 2rem auto;
+      text-align: center;
+      max-width: 800px;
+      animation: fadeIn 2s;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #263238;
+      color: white;
+      font-style: italic;
+      animation: fadeIn 2s;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes glow {
+      from { box-shadow: 0 0 10px #ffd700; }
+      to { box-shadow: 0 0 20px #ff8c00; }
+    }
+    #wheel-container {
+      margin: 3rem auto;
+      text-align: center;
+    }
+    #spin-result {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #4caf50;
+    }
+    button.spin-btn {
+      padding: 1rem 2rem;
+      background: linear-gradient(to right, #43cea2, #185a9d);
+      color: white;
+      border: none;
+      font-size: 1.2rem;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    button.spin-btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(to right, #11998e, #38ef7d);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Huỳnh Thiên Bảo</h1>
+    <p>Sinh lúc 20:30 ngày 02/07/2011 (Giờ Việt Nam) · TP. Hồ Chí Minh</p>
+    <p><strong>Chuyên trang Tứ Trụ - Bát Tự chính xác & hiện đại</strong></p>
+  </header>
+
+  <section>
+    <div class="card">
+      <i class="fas fa-clock"></i>
+      <h2>Giờ sinh: Giờ Tuất (19h–21h)</h2>
+      <p>Giờ Tuất mang yếu tố Hỏa chuyển sang Thổ, giúp bản mệnh chín chắn, có quý nhân độ trì, phát triển mạnh vào chiều tối và trung niên.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-calendar-alt"></i>
+      <h2>Âm lịch: 02/06/Tân Mão</h2>
+      <p>Năm Tân Mão (Kim – Mộc), tháng Giáp Ngọ (Mộc – Hỏa), ngày Ất Hợi (Mộc – Thủy), giờ Bính Tuất (Hỏa – Thổ) → Tứ trụ thiên về Mộc và Hỏa.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-fire"></i>
+      <h2>Mệnh: Tùng Bách Mộc</h2>
+      <p>Mệnh cây tùng bách – cao lớn, độc lập, phát triển vững vàng khi có môi trường ổn định. Tượng trưng cho sự mạnh mẽ và kiên định.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-balance-scale"></i>
+      <h2>Cân bằng ngũ hành</h2>
+      <p>Mộc vượng, Hỏa khá, Kim yếu, Thủy hơi khuyết → nên bổ sung Kim và Thủy qua màu sắc (trắng, đen), vật phẩm phong thủy và hướng nhà.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-brain"></i>
+      <h2>Tính cách</h2>
+      <p>Thông minh, trực giác nhạy, dễ xúc động, có tiềm năng sáng tạo. Nên rèn luyện tính kiên định và ổn định cảm xúc từ nhỏ.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-rocket"></i>
+      <h2>Hướng phát triển</h2>
+      <p>Hợp ngành sáng tạo, công nghệ, nghệ thuật, kinh doanh cá nhân. Tránh các nghề quá cứng nhắc hoặc môi trường kém linh hoạt.</p>
+    </div>
+  </section>
+
+  <div class="multi">
+    <h2 class="highlight">Gợi ý hỗ trợ vận mệnh</h2>
+    <p>Sử dụng đá thạch anh đen, mã não xanh, thạch anh tóc xanh. Bày trí bể cá hướng Bắc, dùng trang phục xanh dương, đen, trắng.</p>
+  </div>
+
+  <div id="wheel-container">
+    <h2 class="highlight">🎯 Vòng quay may mắn</h2>
+    <p>Nhấn để quay số điểm tài lộc hôm nay!</p>
+    <button class="spin-btn" onclick="spinWheel()">Quay ngay</button>
+    <div id="spin-result"></div>
+  </div>
+
+  <footer>
+    Trang web được lập trình bởi Huỳnh Thiên Phát
+  </footer>
+
+  <script>
+    function spinWheel() {
+      const points = Math.floor(Math.random() * 101); // 0–100 điểm
+      const text = `Bạn nhận được ${points} điểm may mắn hôm nay! ✨`;
+      document.getElementById('spin-result').innerText = text;
+    }
+  </script>
+</body>
+</html>
